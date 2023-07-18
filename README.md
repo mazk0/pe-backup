@@ -1,2 +1,2 @@
 # pe-backup
-Tool for backing up Json for http response.
+CLI tool for backing up Json from http response.

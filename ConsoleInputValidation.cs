@@ -25,7 +25,7 @@ public static class ConsoleInputValidation
     
     public static string AppendDestination(IReadOnlyList<string> arguments, string source)
     {
-        if (arguments.Count == 4 && bool.TryParse(arguments[3], out var addDateToFileName) && addDateToFileName)
+        if (arguments.Count == 4 && bool.TryParse(arguments[3], out bool addDateToFileName) && addDateToFileName)
         {
             return source.Insert(source.LastIndexOf('.'), $"_{DateTime.Now:yyyy-MM-dd}");
         }

@@ -35,7 +35,7 @@ public static class ConsoleInputValidation
     
     private static void WriteExample()
     {
-        Console.WriteLine("Usage: dotnet run <source:string> <destination:string> <IncludeDateInFileName:bool !optional!>");
+        Console.WriteLine("Usage: dotnet run <source:string> <destination:string> <IncludeDateInFileName:bool (optional)>");
         Console.WriteLine("Example: dotnet run --configuration Release https://pe.makra.dev/api/event/getall /Volumes/Temp/PolisenSeEvents_Backup/backup.json true");
     }
 }
